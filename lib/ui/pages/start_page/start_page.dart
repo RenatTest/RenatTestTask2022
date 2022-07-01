@@ -16,7 +16,6 @@ class _StartPageState extends State<StartPage> {
   void initState() {
     final user = FirebaseAuth.instance.currentUser;
 
-    print(user);
     if (openWebView == true) {
       Future.delayed(Duration(seconds: 3), () {
         Navigator.pushNamed(context, '/web_view_page');
@@ -52,11 +51,6 @@ class _StartPageState extends State<StartPage> {
               width: 134,
             ),
           ),
-          // child: Image.asset(
-          //   'assets/start_page_logo2.png',
-          //   height: 141,
-          //   width: 163.4,
-          // ),
         ),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,

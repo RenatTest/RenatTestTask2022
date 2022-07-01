@@ -31,6 +31,7 @@ dependencies:
   cloud_firestore: ^1.0.0
   provider: ^5.0.0
   webview_flutter:
+  image_picker:
 
 dev_dependencies:
   flutter_test:
