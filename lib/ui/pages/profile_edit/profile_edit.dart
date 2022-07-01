@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'widgets/avatar_edit.dart';
 import 'widgets/change_theme_button.dart';
@@ -12,7 +13,7 @@ class ProfileEdit extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Profile Edit',
+          AppLocalizations.of(context).profileEdit,
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w700,
